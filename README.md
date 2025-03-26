@@ -26,4 +26,4 @@
 ### Схема классов
 ![alt text](source/Sheme.jpg)
 
-###Исследование работы контейнера std::vector [Текст ссылки](source/STL_vector.pdf)
+### [Исследование работы контейнера std::vector](source/STL_vector.pdf)
