@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4ceb6463-6c9a-4afa-aff9-cc1848abd51b}</ProjectGuid>
+    <ProjectGuid>{00fdbc04-14c7-4187-b5ac-42b89fa7c651}</ProjectGuid>
     <RootNamespace>Contacts</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

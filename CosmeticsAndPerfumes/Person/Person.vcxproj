@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7d410888-5f09-4182-a4f6-b8d6893a8844}</ProjectGuid>
+    <ProjectGuid>{5ba23e01-8600-4f43-bcbf-c56527c89c2c}</ProjectGuid>
     <RootNamespace>Person</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\user\source\repos\CosmeticsAndPerfumes\Contacts;C:\Users\user\source\repos\CosmeticsAndPerfumes\Document;C:\Users\user\source\repos\CosmeticsAndPerfumes\Date;C:\Users\user\source\repos\CosmeticsAndPerfumes\FIO;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,11 +107,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\source\repos\CosmeticsAndPerfumes\Contacts;C:\Users\user\source\repos\CosmeticsAndPerfumes\Document;C:\Users\user\source\repos\CosmeticsAndPerfumes\Date;C:\Users\user\source\repos\CosmeticsAndPerfumes\FIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Users\user\source\repos\CosmeticsAndPerfumes\Contacts;C:\Users\user\source\repos\CosmeticsAndPerfumes\Document;C:\Users\user\source\repos\CosmeticsAndPerfumes\Date;C:\Users\user\source\repos\CosmeticsAndPerfumes\FIO;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -131,6 +138,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contacts\Contacts.vcxproj">
+      <Project>{00fdbc04-14c7-4187-b5ac-42b89fa7c651}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Date\Date.vcxproj">
+      <Project>{cc163e2e-7c18-4074-85ce-9b40b3b8bd95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\FIO\FIO.vcxproj">
+      <Project>{8f72a226-707f-4d06-b825-4f305011a349}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

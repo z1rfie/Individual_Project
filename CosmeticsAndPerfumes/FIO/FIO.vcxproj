@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{12d741b9-010c-4c8a-98f7-69e2459c51fb}</ProjectGuid>
+    <ProjectGuid>{8f72a226-707f-4d06-b825-4f305011a349}</ProjectGuid>
     <RootNamespace>FIO</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

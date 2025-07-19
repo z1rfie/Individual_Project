@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7e9bf6f3-caa3-4062-a7a5-811aff66bb6a}</ProjectGuid>
-    <RootNamespace>Employee</RootNamespace>
+    <ProjectGuid>{978dc87e-b554-48cb-a2aa-caefca16a91e}</ProjectGuid>
+    <RootNamespace>CosmeticsAndPerfumes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="employee.cpp" />
+    <ClCompile Include="cosmetics_perfumes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="employee.h" />
+    <ClInclude Include="cosmetics_perfumes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
